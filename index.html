@@ -1,81 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szabó Attila | Front-end Developer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header">
-        <nav>
-            <h1>
-                Szabó Attila
-                <span>Front-end Developer</span>
+    <header id="header" class="header-container">
+        <nav class="header-nav-container">
+            <h1 class="logo"><a class="logo-text" href="#header">Szabó Attila
+                    <span>webfejlesztő</span>
+                </a>
             </h1>
-            <img src="./images/web_development.jpg" alt="Web Developer">
-            <ul>
-                <li><a href="#header">Főoldal</a></li>
-                <li><a href="#rolam">Rólam</a></li>
-                <li><a href="#referencia">Referenciák</a></li>
-                <li><a href="#tapasztalat">Tapasztalat</a></li>
-                <li><a href="#kapcsolat">Kapcsolat</a></li>
+            <input type="checkbox" id="toggle-menu" data-np-checked="1">
+            <label for="toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="header-menu">
+                <li class="header-menu__li"><a id="active" href="#header">Főoldal</a></li>
+                <li class="header-menu__li"><a href="#referencia">Referenciák</a></li>
+                <li class="header-menu__li"><a href="#tapasztalat">Tapasztalat</a></li>
+                <li class="header-menu__li"><a href="#kapcsolat">Kapcsolat</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="rolam">
-            <h2>SZIA!</h2>
-            <p>Szabó Attila vagyok. 2021 óta foglalkozom weboldalak és felhasználói felületek tervezésével. Modern,
-                letisztult weboldalakat építek, és imádom amit csinálok. Ha szeretnéd felvenni velem a kapcsolatot, <a
-                    href="#kapcsolat">írj nekem.</a></p>
-        </section>
-        <section id="referencia">
-            <h2>Referenciák</h2>
-            <div>
-                <h3>Első munka</h3>
-                <img src="./images/first_job.png" alt="Excavator logo.">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis quo vero.</p>
-            </div>
-            <div>
-                <h3>Második munka</h3>
-                <img src="./images/second_job.png" alt="The Woodhouse massage therapy and body work logo.">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis quo vero.</p>
-            </div>
-            <div>
-                <h3>Harmadik munka</h3>
-                <img src="./images/third_job.png" alt="Chef Hats logo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis quo vero.</p>
+    <main class="main-container">
+        <section id="rolam" class="rolam-section">
+            <h2 class="rolam-title">Helló!</h2>
+            <p>Szabó Attila vagyok. 2021 óta foglalkozom weboldalak és felhasználói felületek fejlesztésével. Modern,
+                letisztult weboldalakat építek, úgy érzem ez a hivatásom. Nagyon szívesen dolgozom együtt
+                magánszemélyekkel, kis és középvállalkozásokkal egyaránt. <br> Amennyiben szeretnéd felvenni velem a
+                kapcsolatot, írj bátran.</p>
+            <div class="btn-container">
+                <button class="btn"><a href="#kapcsolat">Kapcsolat</a></button>
             </div>
         </section>
-        <section id="tapasztalat">
+        <section id="referencia" class="referencia-section">
+            <h2 class="ref-title">Referenciák:</h2>
+            <article class="projects">
+                <div class="project-container">
+                    <a href="#"><img src="./images/wlogo.png" alt="wolfreinigung loto"></a>
+                    <p>Takarítással és ház körüli munkákkal foglalkozó ausztriai kisvállalkozás.</p>
+                </div>
+                <div class="project-container">
+                    <a href="#">
+                        <img src="./images/pinpng.com-coming-soon-png-565839.png" alt="coming soon picture"></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis quo vero.</p>
+                </div>
+                <div class="project-container">
+                    <a href=""><img src="./images/pinpng.com-coming-soon-png-565839.png" alt="coming soon picture"></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis quo vero.</p>
+                </div>
+            </article>
+        </section>
+        <!--<section id="tapasztalat" class="tapasztalat-section">
             <h2>Tapasztalat</h2>
+            <p>Technológiák amiket ismerek</p>
             <div>
                 <h3>HTML5</h3>
                 <img src="./images/HTML5.png" alt="HTML5 logo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Szemantikus markup, profi weboldalak készítése, akadálymentesítés, SEO-barátságos szerkezet.</p>
             </div>
             <div>
                 <h3>CSS3</h3>
                 <img src="./images/CSS3.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, architecto!</p>
+                <p>Profi megjelenés, modern, reszponzív stílus, karbantartható architektúra, Flexbox, Grid.</p>
             </div>
             <div>
                 <h3>JAVASCRIPT</h3>
                 <img src="./images/Javascript.png" alt="Javascript logo">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sit!</p>
+                <p>Modern, 2020-as JavaScript, tiszta kód.</p>
             </div>
             <div>
                 <h3>REACT</h3>
                 <img src="./images/React.png" alt="React logo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste.</p>
+                <p>Modern React, hooks, komplex webalkalmazások            fejlesztése.</p>
             </div>
             <div>
                 <h3>PYTHON</h3>
                 <img src="./images/Python.png" alt="Python logo">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis!</p>
+                <p>Szerver oldali webfejlesztés</p>
             </div>
         </section>
         <section id="kapcsolat">
