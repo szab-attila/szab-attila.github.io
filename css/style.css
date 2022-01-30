@@ -1,0 +1,247 @@
+html {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.0625rem;
+  box-sizing: border-box;
+  font-size: 12px;
+  background-color: var(--background-color);
+  --color-primary: #ff1616;
+  --color-secondary: whitesmoke;
+  --background-color: #0f0f0f;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/* IDEIGELENES */
+
+.tapasztalat-section div img {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+/*************************************************************/
+
+/******************* HEADER STÍLUS ***************************/
+
+/*************************************************************/
+
+.header-nav-container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.logo-text {
+  color: var(--color-secondary);
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.header-menu {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-menu a:hover {
+  color: var(--color-primary);
+}
+
+.header-menu__li {
+  margin: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.header-menu__li a::after {
+  content: "";
+  width: 0%;
+  height: 2.5px;
+  background-color: var(--color-primary);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.header-menu__li :hover::after {
+  width: 100%;
+}
+
+#active {
+  color: var(--color-primary);
+}
+
+#toggle-menu {
+  display: none;
+}
+
+
+/*************************************************************/
+
+/*********************** ROLAM STÍLUS ************************/
+
+/*************************************************************/
+.rolam-title {
+  color: var(--color-secondary);
+  text-shadow: 0 0 8px var(--color-secondary);
+  margin-bottom: 60px;
+}
+
+.rolam-section {
+  margin: 150px 0;
+}
+
+.rolam-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.rolam-section p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  color: #bebebe;
+  line-height: 35px;
+}
+
+/*************************************************************/
+
+/********************* BUTTON STÍLUS *************************/
+
+/*************************************************************/
+
+.btn-container {
+  text-align: center;
+  margin-top: 60px;
+  
+}
+
+.btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.btn {
+  border: 1px solid var(--color-primary);
+  background: none;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  color: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary);
+  border-radius: 3px;
+}
+
+.btn:hover a {
+  color: var(--background-color);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--color-primary);
+  z-index: -1;
+  transition: 0.8s;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.btn:hover::before {
+  height: 180%;
+}
+
+/*************************************************************/
+
+/********************* REFERENCIA STÍLUS *********************/
+
+/*************************************************************/
+
+
+
+.ref-title {
+  font-size: 1.9rem;
+  margin-bottom: 60px;
+  color: var(--color-secondary);
+  text-shadow: 0 0 8px var(--color-secondary);
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+
+.project-container {
+  flex-basis: 32%;
+  border-radius: 15px;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+  
+}
+
+.project-container img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.project-container p {
+  padding-top: 22px;
+  font-size: 15px;
+  color: #bebebe;
+}
+
+.project-container:hover{
+  border: none;
+  box-shadow: 0 0 10px var(--color-secondary);
+  transition: .5s;
+}
+
+@media (max-width: 650px) {
+  .projects {
+    flex-direction: column;
+
+  }
+}
+
+
+
+
+
+
