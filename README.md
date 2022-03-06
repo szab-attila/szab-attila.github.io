@@ -1,5 +1,2 @@
-# szab-attila.github.io
-My website: [LINK](szab-attila.github.io)
-
-
-NEm kell köszönni,
+# szab.attila.github.io
+My website: [LINK](https://szab-attila.github.io/szab-attila.github.io/)
