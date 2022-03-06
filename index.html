@@ -5,39 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+        integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"
+        integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Szabó Attila | Front-end Developer</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/fsociety.jpg" type="image/x-icon">
 </head>
 
 <body>
     <header id="header" class="header-container">
         <nav class="header-nav-container">
             <h1 class="logo"><a class="logo-text" href="#header">Szabó Attila
-                    <span>webfejlesztő</span>
                 </a>
             </h1>
-            <input type="checkbox" id="toggle-menu" data-np-checked="1">
-            <label for="toggle-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
             <ul class="header-menu">
-                <li class="header-menu__li"><a id="active" href="#header">Főoldal</a></li>
+                <li class="header-menu__li"><a href="#header">Főoldal</a></li>
                 <li class="header-menu__li"><a href="#referencia">Referenciák</a></li>
                 <li class="header-menu__li"><a href="#tapasztalat">Ismeretek</a></li>
                 <li class="header-menu__li"><a href="#kapcsolat">Kapcsolat</a></li>
             </ul>
         </nav>
     </header>
+
     <main class="main-container">
         <section id="rolam" class="rolam-section">
             <h2 class="rolam-title">Helló!</h2>
-            <p>Szabó Attila vagyok. 2021 óta foglalkozom weboldalak és felhasználói felületek fejlesztésével. Modern,
-                letisztult weboldalakat építek, úgy érzem ez a hivatásom. Nagyon szívesen dolgozom együtt
+            <p>Szabó Attila vagyok. 2021 óta foglalkozom weboldalak és felhasználói felületek fejlesztésével. Hivatásom
+                modern, letisztult, jó felhasználói élményt nyújtó, reszponzív weboldalak építése. Szívesen
+                dolgozom együtt
                 magánszemélyekkel, kis és középvállalkozásokkal egyaránt. <br> Amennyiben szeretnéd felvenni velem a
                 kapcsolatot, írj bátran.</p>
             <div class="btn-container">
@@ -48,46 +51,51 @@
             <h2 class="ref-title">Referenciák:</h2>
             <div class="projects">
                 <div class="project-container">
-                    <a href="#"><img src="./images/wlogo.png" alt="wolfreinigung loto"></a>
+                    <a href="#"><img src="./assets/images/wlogo.png" alt="wolfreinigung loto"></a>
                     <p>Takarítással és ház körüli munkákkal foglalkozó ausztriai kisvállalkozás.</p>
                 </div>
                 <div class="project-container">
                     <a href="#">
-                        <img src="./images/pinpng.com-coming-soon-png-565839.png" alt="coming soon picture"></a>
+                        <img src="./assets/images/pinpng.com-coming-soon-png-565839.png" alt="coming soon picture"></a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis quo vero.</p>
                 </div>
                 <div class="project-container">
-                    <a href=""><img src="./images/pinpng.com-coming-soon-png-565839.png" alt="coming soon picture"></a>
+                    <a href=""><img src="./assets/images/pinpng.com-coming-soon-png-565839.png"
+                            alt="coming soon picture"></a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis quo vero.</p>
                 </div>
             </div>
         </section>
         <section id="tapasztalat" class="tech-section">
             <h2 class="tech-title">Technológiák:</h2>
-            <div>
-                <h3>HTML5</h3>
-                <img src="./images/HTML5.png" alt="HTML5 logo">
-                <p>Szemantikus markup, profi weboldalak készítése, akadálymentesítés, SEO-barátságos szerkezet.</p>
+            <div class="grid-container">
+                <div class="item item_1">
+                    <h3>HTML5</h3>
+                    <img src="./assets/images/HTML5.png" alt="HTML5 logo">
+                    <p>Szemantikus markup, profi weboldalak készítése, akadálymentesítés, SEO-barátságos szerkezet.</p>
+                </div>
+                <div class="item item_2">
+                    <h3>CSS3</h3>
+                    <img src="./assets/images/CSS3.png" alt="">
+                    <p>Profi megjelenés, modern, reszponzív stílus, karbantartható architektúra, Flexbox, Grid.</p>
+                </div>
+                <div class="item item_3">
+                    <h3>JAVASCRIPT</h3>
+                    <img src="./assets/images/Javascript.png" alt="Javascript logo">
+                    <p>Modern, 2020-as JavaScript, tiszta kód.</p>
+                </div>
             </div>
-            <div>
-                <h3>CSS3</h3>
-                <img src="./images/CSS3.png" alt="">
-                <p>Profi megjelenés, modern, reszponzív stílus, karbantartható architektúra, Flexbox, Grid.</p>
-            </div>
-            <div>
-                <h3>JAVASCRIPT</h3>
-                <img src="./images/Javascript.png" alt="Javascript logo">
-                <p>Modern, 2020-as JavaScript, tiszta kód.</p>
-            </div>
-            <div>
-                <h3>REACT</h3>
-                <img src="./images/React.png" alt="React logo">
-                <p>Modern React, hooks, komplex webalkalmazások            fejlesztése.</p>
-            </div>
-            <div>
-                <h3>PYTHON</h3>
-                <img src="./images/Python.png" alt="Python logo">
-                <p>Szerver oldali webfejlesztés</p>
+            <div class="grid-container-2">
+                <div class="item item_4">
+                    <h3>REACT</h3>
+                    <img src="./assets/images/React.png" alt="React logo">
+                    <p>Modern React, hooks, komplex webalkalmazások fejlesztése.</p>
+                </div>
+                <div class="item item_5">
+                    <h3>PYTHON</h3>
+                    <img src="./assets/images/Python.png" alt="Python logo">
+                    <p>Szerver oldali webfejlesztés</p>
+                </div>
             </div>
         </section>
         <section id="kapcsolat">
