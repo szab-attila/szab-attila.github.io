@@ -28,12 +28,12 @@
     <link rel="shortcut icon" href="./assets/images/fsociety.jpg" type="image/x-icon">
 </head>
 
-<body>
+<body id="body">
     <!-- HEADER -->
     <header class="header-box">
         <nav class="header-nav">
             <!-- LOGO -->
-            <h1 class="logo">
+            <h1 class="logo" id="logo">
                 <a href="">Attila<span>.</span>
                 </a>
             </h1>
@@ -48,12 +48,14 @@
                 <div class="header-nav__content">
                     <h2 class="header-nav-content__title">Navigation</h2>
                     <ul>
-                        <li class="menu-item"><a href="#">Főoldal</a></li>
-                        <li class="menu-item"><a href="#">Referenciák</a></li>
-                        <li class="menu-item"><a href="#">Ismeretek</a></li>
-                        <li class="menu-item"><a href="#">Kapcsolat</a></li>
+                        <li class="header-nav-content__links"><a class="menu-item" href="#body">Főoldal</a></li>
+                        <li class="header-nav-content__links"><a class="menu-item" href="#referencia">Referenciák</a></li>
+                        <li class="header-nav-content__links"><a class="menu-item" href="#tapasztalat">Ismeretek</a></li>
+                        <li class="header-nav-content__links"><a class="menu-item" href="#kapcsolat">Kapcsolat</a></li>
                     </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae fugiat corporis praesentium
+
+                    <p class="header-bekezdes">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae fugiat
+                        corporis praesentium
                         quaerat
                         odio
                         minima dolorem laudantium doloremque voluptatem!</p>
@@ -64,15 +66,19 @@
                 </div>
             </section>
         </nav>
-        <h2>Welcome to my site</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis aperiam soluta facere eos quia.</p>
-        <button></button>
-        <button></button>
+        <div class="header-sec-box">
+            <h2 class="header-title">Welcome to my site</h2>
+            <p class="header-bekezdes">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis aperiam soluta
+                facere eos quia.</p>
+            <a class="header-btn  btn-rolam" href="#rolam">Rólam</a>
+            <a class="header-btn  btn-kontakt" href="#kapcsolat">Kontakt</a>
+        </div>
+
         <!-- SOCIAL MEDIA LINKS -->
-        <ul>
+        <!-- <ul class="header-list">
             <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-        </ul>
+        </ul> -->
     </header>
 
     <main class="main-container  container">
