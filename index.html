@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICONS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
         integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,30 +14,71 @@
         integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Szabó Attila | Front-end Developer</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- FONTS  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap"
         rel="stylesheet">
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./assets/images/fsociety.jpg" type="image/x-icon">
 </head>
 
 <body>
-    <header id="header" class="header-container">
-        <nav class="header-nav-container">
-            <h1 class="logo"><a class="logo-text" href="#header">Szabó Attila
+    <!-- HEADER -->
+    <header class="header-box">
+        <nav class="header-nav">
+            <!-- LOGO -->
+            <h1 class="logo">
+                <a href="">Attila<span>.</span>
                 </a>
             </h1>
-            <ul class="header-menu">
-                <li class="header-menu__li"><a href="#header">Főoldal</a></li>
-                <li class="header-menu__li"><a href="#referencia">Referenciák</a></li>
-                <li class="header-menu__li"><a href="#tapasztalat">Ismeretek</a></li>
-                <li class="header-menu__li"><a href="#kapcsolat">Kapcsolat</a></li>
-            </ul>
+            <!-- HAMBURGER MENU -->
+            <section class="hamburger-menu">
+                <input type="checkbox" name="hamburger" id="menu__toggle">
+                <label for="menu__toggle" class="hamburger-button">
+                    <h2 class="hamburger-button__title">Menü</h2>
+                    <span class="hamburger-lines"></span>
+                </label>
+                <!-- MAIN MENU -->
+                <div class="header-nav__content">
+                    <h2 class="header-nav-content__title">Navigation</h2>
+                    <ul>
+                        <li class="menu-item"><a href="#">Főoldal</a></li>
+                        <li class="menu-item"><a href="#">Referenciák</a></li>
+                        <li class="menu-item"><a href="#">Ismeretek</a></li>
+                        <li class="menu-item"><a href="#">Kapcsolat</a></li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae fugiat corporis praesentium
+                        quaerat
+                        odio
+                        minima dolorem laudantium doloremque voluptatem!</p>
+                    <ul class="header-nav__social">
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </section>
         </nav>
+        <h2>Welcome to glint</h2>
+        <p>We are a creative group
+            of people who design
+            influential brands and
+            digital experiences.</p>
+        <button></button>
+        <button></button>
+        <!-- SOCIAL MEDIA LINKS -->
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
     </header>
 
-    <main class="main-container">
+    <main class="main-container  container">
         <section id="rolam" class="rolam-section">
             <h2 class="rolam-title">Helló!</h2>
             <p>Szabó Attila vagyok. 2021 óta foglalkozom weboldalak és felhasználói felületek fejlesztésével. Hivatásom
@@ -119,7 +162,7 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer-container  container">
         <nav>
             <ul>
                 <li><a href="#header">Főoldal</a></li>
