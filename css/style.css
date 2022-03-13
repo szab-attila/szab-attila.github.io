@@ -57,7 +57,6 @@ a {text-decoration: none;}
   /* background-image: url(../assets/images/hatter.jpg);
   background-position: center;
   background-size: cover; */
-  display: flex;
 }
 
 .header-nav {
@@ -99,7 +98,7 @@ a {text-decoration: none;}
   position: fixed;
   top: 33px;
   right: 32px;
-  width: 12.5rem;
+  width: 6.5rem;
   height: 2.5rem;
   cursor: pointer;
   z-index: 1;
@@ -125,17 +124,6 @@ a {text-decoration: none;}
   top: 9px;
 }
 
-.hamburger-button__title {
-  color: var(--color-green);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  position: absolute;
-  top: 12px;
-  right: 58px;
-  letter-spacing: 2px;
-  
-}
-
 .header-nav__content {
   display: block;
   position: fixed;
@@ -156,6 +144,10 @@ a {text-decoration: none;}
   top: 49px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.hamburger-button__title {
+  visibility: hidden;
 }
 
 .header-nav-content__links:first-child {
@@ -209,7 +201,7 @@ a {text-decoration: none;}
 #menu__toggle:checked ~ .hamburger-button .hamburger-lines {
   transform: rotate(45deg);
   width: 1.5rem;
-  left: 9rem;
+  left: 4rem;
   top: 21px;
   box-shadow: 0px 0px 3px white;
 }
@@ -229,15 +221,23 @@ a {text-decoration: none;}
   box-shadow: 0px 0px 3px white;
 }
 
+.flex-container {
+  display: flex;
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .header-sec-box {
-  max-width: 80%;
-  height: 100vh;
+  max-width: 90%;
   /* outline: 1px solid red; */
-  margin: 135px auto 0;
+  /* margin: 16rem auto; */
   text-align: center;
 }
 
 .header-title {
+  margin-top: 8rem;
   color: var(--color-gray);
   font-size: 1.6rem;
   font-weight: 700;
@@ -250,6 +250,7 @@ a {text-decoration: none;}
   color: var(--color-white);
   font-size: 3.3rem;
   line-height: 4rem;
+  padding: 0 2rem;
 }
 
 .header-btn {
@@ -280,9 +281,57 @@ a {text-decoration: none;}
 }
 
 
-@media (max-width: 400px) {
+
+
+
+@media (min-width: 576px) {
+  .hamburger-button__title {
+    color: var(--color-green);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 12px;
+    right: 58px;
+    letter-spacing: 2px;
+    visibility: visible;
+  }
+
+  .hamburger-button {
+    width: 12.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+  
+}
+
+@media (min-width: 1200px) {
+  
+}
+
+
+/* @media (max-width: 400px) {
   .hamburger-button__title {
     display: none;
   }
 
-}
+  .hamburger-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--header-background-color);
+    padding: 20px;
+    position: fixed;
+    top: 33px;
+    right: 32px;
+    width: 6.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+  } */
+
+
