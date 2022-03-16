@@ -17,8 +17,7 @@
 /* Tervezési segítség, késöbb törlöm */
 /* --------------------------------- */
 img {
-  width: 100%;
-  height: auto;
+  width: 200px;
 }
 
 /* ------------------ */
@@ -28,7 +27,7 @@ img {
 html {
   box-sizing: border-box;
   font-size: 10px;
-  font-family: sans-serif;
+  font-family: "Lora", serif;
   user-select: none;
 }
 
@@ -38,9 +37,13 @@ body {
   /* font-family: 'Lora', serif; */
 }
 
-li {list-style-type: none;}
+li {
+  list-style-type: none;
+}
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
 /* ------ */
 /* HEADER */
@@ -59,13 +62,11 @@ a {text-decoration: none;}
   width: 0;
 }
 
-
 .logo {
   display: inline-block;
   position: relative;
   top: 35px;
   left: 35px;
-
 }
 
 .logo a {
@@ -140,6 +141,7 @@ a {text-decoration: none;}
   top: 49px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  z-index: 100;
 }
 
 .hamburger-button__title {
@@ -224,24 +226,22 @@ a {text-decoration: none;}
   align-items: center;
 }
 
-
 .header-sec-box {
   max-width: 90%;
   text-align: center;
 }
 
 .header-title {
-  margin-top: 8rem;
-  color: var(--color-gray);
   font-size: 1.6rem;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-gray);
   text-transform: uppercase;
-  margin-bottom: 7px;
+  margin-top: 8rem;
+  margin-bottom: 15px;
   letter-spacing: 0.3rem;
 }
 
 .header-bekezdes {
-  font-family: 'Lora', serif;
   color: var(--color-white);
   font-size: 3.3rem;
   line-height: 4rem;
@@ -252,7 +252,7 @@ a {text-decoration: none;}
   display: block;
   margin: 0px auto;
   border: 1px solid var(--color-white);
-  width: 100%; 
+  width: 100%;
   padding: 20px;
   background: transparent;
   color: var(--color-white);
@@ -260,6 +260,7 @@ a {text-decoration: none;}
   letter-spacing: 5px;
   font-weight: 400;
   font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-rolam {
@@ -275,7 +276,6 @@ a {text-decoration: none;}
   background-color: #fff;
 }
 
-
 /* ROLAM SECTION */
 
 .rolam-section {
@@ -284,54 +284,84 @@ a {text-decoration: none;}
 }
 
 .rolam-title {
-  font-family: 'Lora', serif;
-  color: #060c10;
+  font-family: "Montserrat", sans-serif;
+  color: var(--header-background-color);
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  text-align: center;
+  letter-spacing: 2px;
   padding-top: 80px;
 }
 
 .rolam-title-2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   color: var(--color-white);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.rolam-content {
+  padding: 0 50px;
+}
+
+.line {
+  width: 220px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.325);
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.line-color {
+  width: 220px;
+  height: 1px;
+  background-color: rgba(0, 0, 0);
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.referencia-section {
+  text-align: center;
+}
+
+.referencia-section h2 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-green);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.first-p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--header-background-color);
   text-transform: capitalize;
   letter-spacing: 1px;
   text-align: center;
 }
 
-.rolam-content {
-  padding: 50px;
-  font-family: 'Lora', serif;
+.ref-col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 85%;
+  margin: auto;
 }
 
-.row::before {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.25);
-  min-width: 220px;
-  height: 1px;
-  position: absolute;
-  left: 50%;
-  margin: -20px 0;
-  transform: translate(-50%);
+.project-container {
+  width: 250px;
 }
-
-.row::after {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.25);
-  min-width: 220px;
-  height: 1px;
-  position: absolute;
-  margin: 20px 0;
-  transform: translate(-50%);
-}
-
 
 @media (min-width: 400px) {
   .hamburger-button__title {
     color: var(--color-green);
+    font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
     position: fixed;
@@ -340,32 +370,36 @@ a {text-decoration: none;}
     letter-spacing: 4px;
     visibility: visible;
     z-index: 2;
-    background-color: var(--header-background-color);
     height: 2.5rem;
   }
 
-  /* .hamburger-button {
-    width: 12.5rem;
-  } */
-
+  .hamburger-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--header-background-color);
+    padding: 20px;
+    position: fixed;
+    top: 33px;
+    right: 32px;
+    width: 13.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 500px) {
-
 }
 
 @media (min-width: 768px) {
-  
 }
 
 @media (min-width: 992px) {
-  
 }
 
 @media (min-width: 1200px) {
-  
 }
-
 
 /* @media (max-width: 400px) {
   .hamburger-button__title {
@@ -386,5 +420,3 @@ a {text-decoration: none;}
     cursor: pointer;
     z-index: 1;
   } */
-
-
