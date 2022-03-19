@@ -33,9 +33,9 @@
     <link rel="shortcut icon" href="./assets/images/fsociety.jpg" type="image/x-icon">
 </head>
 
-<body id="body">
+<body>
     <!-- HEADER -->
-    <header class="header-box">
+    <header id="header" class="header-box">
         <nav class="header-nav">
             <!-- LOGO -->
             <div class="logo-box">
@@ -57,7 +57,7 @@
                     <div class="header-nav__content">
                         <h2 class="header-nav-content__title">Navigation</h2>
                         <ul>
-                            <li class="header-nav-content__links"><a class="menu-item" href="#body">Főoldal</a></li>
+                            <li class="header-nav-content__links"><a class="menu-item" href="#header">Főoldal</a></li>
                             <li class="header-nav-content__links"><a class="menu-item"
                                     href="#referencia">Referenciák</a>
                             </li>
@@ -77,15 +77,15 @@
                 </section>
             </div>
         </nav>
-        <div class="flex-container">
-            <div class="header-sec-box">
-                <h2>Üdv az oldalon</h2>
-                <p>Weboldal tervek készítése és kivitelezése egyedi igények szerint.
-                    Kérjen ingyenesen árajánlatot személyre szabva!</p>
-                <a class="header-btn  btn-rolam" href="#rolam">Rólam</a>
-                <a class="header-btn  btn-kontakt" href="#kapcsolat">Kontakt</a>
-            </div>
+
+        <div class="header-sec-box">
+            <h2>Üdv az oldalamon</h2>
+            <p>Weboldal tervek készítése és kivitelezése egyedi igények szerint.
+                Kérjen ingyenesen árajánlatot személyre szabva!</p>
+            <a class="header-btn  btn-rolam" href="#rolam">Rólam</a>
+            <a class="header-btn  btn-kontakt" href="#kapcsolat">Kontakt</a>
         </div>
+
 
         <!-- SOCIAL MEDIA LINKS -->
         <!-- <ul class="header-list">
@@ -100,7 +100,7 @@
                 <h2>Szabó Attila</h2>
             </div>
             <div class="rolam-title-2">
-                <h3>Webfejlesztő</h3>
+                <h3>Front-end Developer</h3>
             </div>
             <span class="line"></span>
             <div class="rolam-content">
@@ -116,7 +116,7 @@
         </section>
         <section id="referencia" class="referencia-section">
             <h2>Munkáim</h2>
-            <p class="first-p">Weboldal referenciák</p>
+            <p>Weboldal referenciák</p>
             <span class="line-color"></span>
             <div class="ref-row">
                 <div class="ref-col">
@@ -150,7 +150,7 @@
                         <div class="container-heading">
                             <h3>Projekt 3</h3>
                         </div>
-                        <div class="container-content">
+                        <div class="container-content projekt-3">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officia provident ex
                                 rerum dolores ea earum, fugiat tempora eaque, ad sequi. Corporis expedita sit
                                 dignissimos recusandae consequatur inventore debitis accusantium?</p>
@@ -164,32 +164,35 @@
         <section id="tapasztalat" class="tech-section">
             <div class="tech-heading">
                 <h2>Tapasztalat</h2>
-                <p>Technológiák amiket ismerek</p>
+                <p>Technológiák amiket használok</p>
                 <span class="line"></span>
             </div>
-            <div class="">
+            <div class="no-content"></div>
+            <div class="tech-container">
                 <div class="item item_1">
                     <h3>HTML5</h3>
                     <img src="./assets/images/HTML5.png" alt="HTML5 logo">
                     <p>Szemantikus markup, profi weboldalak készítése, akadálymentesítés, SEO-barátságos szerkezet.</p>
                 </div>
+                <span class="line"></span>
                 <div class="item item_2">
                     <h3>CSS3</h3>
                     <img src="./assets/images/CSS3.png" alt="">
                     <p>Profi megjelenés, modern, reszponzív stílus, karbantartható architektúra, Flexbox, Grid.</p>
                 </div>
+                <span class="line-color"></span>
                 <div class="item item_3">
                     <h3>JAVASCRIPT</h3>
                     <img src="./assets/images/Javascript.png" alt="Javascript logo">
                     <p>Modern, 2020-as JavaScript, tiszta kód.</p>
                 </div>
-            </div>
-            <div class="grid-container-2">
+                <span class="line-color"></span>
                 <div class="item item_4">
                     <h3>REACT</h3>
                     <img src="./assets/images/React.png" alt="React logo">
                     <p>Modern React, hooks, komplex webalkalmazások fejlesztése.</p>
                 </div>
+                <span class="line-color"></span>
                 <div class="item item_5">
                     <h3>PYTHON</h3>
                     <img src="./assets/images/Python.png" alt="Python logo">
@@ -197,9 +200,12 @@
                 </div>
             </div>
         </section>
-        <section id="kapcsolat">
-            <h2>Köszönöm, hogy felveszed velem a kapcsolatot.</h2>
-            <p>Írd meg kérlek, hogy miben lehetek a segítségedre.</p>
+        <section id="kapcsolat" class="kapcsolat-section">
+            <div class="contact-container">
+                <h2>Lépj velem kapcsolatba</h2>
+                <p>Kezdj bele egy új projektbe vagy csak köszönj be.</p>
+            </div>
+
             <form action="https://formspree.io/f/xwkyvlpj" method="post">
                 <label> *Név:
                     <input type="text" name="Name" required>
@@ -221,21 +227,15 @@
     <footer class="footer-container  container">
         <nav>
             <ul>
-                <li><a href="#header">Főoldal</a></li>
-                <li><a href="#rolam">Rólam</a></li>
-                <li><a href="#referencia">Referenciák</a></li>
-                <li><a href="#tapasztalat">Tapasztalat</a></li>
-                <li><a href="#kapcsolat">Kapcsolat</a></li>
-            </ul>
-            <ul>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">GitHub</a></li>
                 <li><a href="#">LinkedIn</a></li>
             </ul>
         </nav>
 
-        <p>Copyright &copy; Szabó Attila 2022</p>
+        <p>&copy; Copyright Szabó Attila 2022</p>
     </footer>
+    <!-- <button><a class="fel-gomb" href="#header">FEL</a></button> -->
 </body>
 
 </html>
