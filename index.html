@@ -201,23 +201,19 @@
                 <h2>Lépj velem kapcsolatba</h2>
                 <p>Kezdj egy új projektbe vagy csak köszönj be.</p>
             </div>
-
-            <form action="https://formspree.io/f/xwkyvlpj" method="post">
-                <label> *Név:
-                    <input type="text" name="Name" required>
-                </label>
-                <br>
-                <label>
-                    *E-mail:
-                    <input type="email" name="Email" required>
-                </label>
-                <br>
-                <label> *Üzenet:
-                    <textarea name="Message" required></textarea>
-                </label>
-                <br>
-                <button>Küldés</button>
-            </form>
+            <div class="form">
+                <h2>Küldj nekem üzenetet</h2>
+                <div class="form-container">
+                    <fieldset>
+                        <form action="https://formspree.io/f/xwkyvlpj" method="post">
+                            <input class="form-box" type="text" name="Name" placeholder="Név" required>
+                            <input class="form-box" type="email" name="Email" placeholder="Email" required>
+                            <textarea class="form-box" name="Message" placeholder="Üzenet" required></textarea>
+                            <button>Küldés</button>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
         </section>
     </main>
     <!-- FOOTER -->
