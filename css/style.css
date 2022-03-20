@@ -57,6 +57,7 @@ fieldset {
   width: 100%;
   min-height: 100vh;
   background-color: var(--header-background-color);
+  padding-bottom: 30px;
   /* background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.9)),
     url(../assets/images/background.jpg);
   background-position: center;
