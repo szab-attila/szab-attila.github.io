@@ -446,7 +446,7 @@ fieldset {
   color: var(--color-green);
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding-top: 80px;
   text-align: center;
 }
@@ -532,16 +532,54 @@ fieldset {
 /* FOOTER */
 
 .footer-container {
+  position: relative;
+  text-align: center;
+  background-color: var(--header-background-color);
+}
+
+.footer-container nav ul {
+  display: flex;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.footer-links > i {
+  color: var(--color-white);
+  margin: 0px 15px;
+}
+
+.footer-links > i:hover {
+  color: var(--color-green);
+}
+
+.footer-logo {
+  margin: 15px;
+}
+
+.footer-logo a {
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  color: var(--color-green);
+}
+.footer-logo a span {
+  color: var(--color-green);
+}
+
+.footer-container p {
+  color: var(--color-gray);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer-line {
+  width: 50px;
 }
 
 /* FEL GOMB */
 
 .fel-box {
   margin: 5px;
-}
-
-.footer-container {
-  position: relative;
 }
 
 .fa-solid {
