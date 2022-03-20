@@ -527,6 +527,7 @@ fieldset {
 }
 
 .form-container button:hover {
+  background-color: rgb(57, 181, 74, 0.8);
 }
 
 /* FOOTER */
