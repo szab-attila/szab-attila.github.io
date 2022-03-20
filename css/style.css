@@ -141,6 +141,7 @@ a {
   font-size: 1.2rem;
   position: fixed;
   top: 49px;
+  right: 65px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -151,6 +152,10 @@ a {
 
 .header-nav-content__links:first-child {
   margin-top: 70px;
+}
+
+.fa-brands:hover {
+  color: var(--color-white);
 }
 
 .menu-item {
@@ -181,7 +186,7 @@ a {
 
 .header-nav__social {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   margin-top: 50px;
 }
 
@@ -285,7 +290,7 @@ a {
   color: var(--color-white);
   text-transform: capitalize;
   letter-spacing: 1px;
-  max-width: 210px;
+  max-width: 280px;
   text-align: center;
   display: inline-block;
 }
@@ -327,7 +332,7 @@ a {
 
 .referencia-section > p {
   display: inline-block;
-  max-width: 210px;
+  max-width: 280px;
   font-size: 30px;
   font-weight: 700;
   color: var(--header-background-color);
@@ -367,7 +372,7 @@ a {
 /* TAPASZTALAT */
 
 .tech-heading {
-  width: 100vw;
+  width: 100%;
   height: 750px;
   background-color: var(--header-background-color);
 }
@@ -388,7 +393,7 @@ a {
 
 .tech-heading p {
   display: inline-block;
-  max-width: 210px;
+  max-width: 280px;
   font-size: 30px;
   font-weight: 700;
   color: var(--color-white);
@@ -431,6 +436,7 @@ a {
 
 .contact-container {
   background-color: #1a1a1a;
+  text-align: center;
 }
 
 .contact-container h2 {
@@ -450,18 +456,41 @@ a {
   letter-spacing: 1px;
   text-align: center;
   margin-top: 3px;
+  max-width: 280px;
 }
 
 /* FEL GOMB */
 
-.fel-gomb {
-  width: 40px;
-  height: 40px;
-  background-color: #060c10;
-  position: fixed;
-  display: inline-block;
+.fel-box {
+  margin: 5px;
 }
-/* @media (min-width: 400px) {
+
+.footer-container {
+  position: relative;
+}
+
+.fa-solid {
+  position: fixed;
+  bottom: 32px;
+  left: 313px;
+  width: 44px;
+  height: 44px;
+  background: var(--header-background-color);
+  color: var(--color-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-solid:hover {
+  color: var(--color-white);
+}
+
+.fel-box img {
+  width: 30px;
+}
+
+@media (min-width: 400px) {
   .hamburger-button__title {
     color: var(--color-green);
     font-size: 1.5rem;
@@ -488,8 +517,8 @@ a {
     height: 2.5rem;
     cursor: pointer;
     z-index: 1;
-  } 
-} */
+  }
+}
 
 @media (min-width: 500px) {
 }

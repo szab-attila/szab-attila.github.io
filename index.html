@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ICONS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
-        integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"
-        integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Szabó Attila | Front-end Developer</title>
     <!-- CSS -->
@@ -47,34 +44,33 @@
 
             <!-- HAMBURGER MENU -->
             <div class="hamburger-menu">
-                <section>
-                    <input type="checkbox" name="hamburger" id="menu__toggle">
-                    <h2 class="hamburger-button__title">Menü</h2>
-                    <label for="menu__toggle" class="hamburger-button">
-                        <span class="hamburger-lines"></span>
-                    </label>
-                    <!-- MAIN MENU -->
-                    <div class="header-nav__content">
-                        <h2 class="header-nav-content__title">Navigation</h2>
-                        <ul>
-                            <li class="header-nav-content__links"><a class="menu-item" href="#header">Főoldal</a></li>
-                            <li class="header-nav-content__links"><a class="menu-item"
-                                    href="#referencia">Referenciák</a>
-                            </li>
-                            <li class="header-nav-content__links"><a class="menu-item" href="#tapasztalat">Ismeretek</a>
-                            </li>
-                            <li class="header-nav-content__links"><a class="menu-item" href="#kapcsolat">Kapcsolat</a>
-                            </li>
-                        </ul>
 
-                        <p class="header-bekezdes">Weboldal tervek készítése és kivitelezése egyedi igények szerint.
-                            Kérjen ingyenesen árajánlatot személyre szabva!</p>
-                        <ul class="header-nav__social">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </section>
+                <input type="checkbox" name="hamburger" id="menu__toggle">
+                <h2 class="hamburger-button__title">Menü</h2>
+                <label for="menu__toggle" class="hamburger-button">
+                    <span class="hamburger-lines"></span>
+                </label>
+                <div class="header-nav__content">
+                    <h2 class="header-nav-content__title">Bezárás</h2>
+                    <ul>
+                        <li class="header-nav-content__links"><a class="menu-item" href="#header">Főoldal</a></li>
+                        <li class="header-nav-content__links"><a class="menu-item" href="#referencia">Referenciák</a>
+                        </li>
+                        <li class="header-nav-content__links"><a class="menu-item" href="#tapasztalat">Tapasztalat</a>
+                        </li>
+                        <li class="header-nav-content__links"><a class="menu-item" href="#kapcsolat">Kapcsolat</a>
+                        </li>
+                    </ul>
+
+                    <p class="header-bekezdes">Weboldal tervek készítése és kivitelezése egyedi igények szerint.
+                        Kérjen ingyenesen árajánlatot személyre szabva!</p>
+                    <ul class="header-nav__social">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+
             </div>
         </nav>
 
@@ -203,7 +199,7 @@
         <section id="kapcsolat" class="kapcsolat-section">
             <div class="contact-container">
                 <h2>Lépj velem kapcsolatba</h2>
-                <p>Kezdj bele egy új projektbe vagy csak köszönj be.</p>
+                <p>Kezdj egy új projektbe vagy csak köszönj be.</p>
             </div>
 
             <form action="https://formspree.io/f/xwkyvlpj" method="post">
@@ -227,15 +223,17 @@
     <footer class="footer-container  container">
         <nav>
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>
 
         <p>&copy; Copyright Szabó Attila 2022</p>
+
+        <a href="#header"><i class="fa-solid fa-angle-up"></i></a>
+
     </footer>
-    <!-- <button><a class="fel-gomb" href="#header">FEL</a></button> -->
 </body>
 
 </html>
