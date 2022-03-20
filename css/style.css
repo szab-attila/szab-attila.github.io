@@ -571,10 +571,7 @@ fieldset {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 1px;
-}
-
-.footer-line {
-  width: 50px;
+  padding-bottom: 20px;
 }
 
 /* FEL GOMB */
