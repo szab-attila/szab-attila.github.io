@@ -219,7 +219,7 @@ fieldset {
 }
 
 .header-sec-box {
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
   text-align: center;
 }
@@ -228,7 +228,7 @@ fieldset {
   font-size: 1.6rem;
   color: var(--color-gray);
   text-transform: uppercase;
-  margin-top: 8rem;
+  margin-top: 4rem;
   margin-bottom: 15px;
   letter-spacing: 0.3rem;
 }
