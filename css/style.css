@@ -554,7 +554,7 @@ fieldset {
 }
 
 .footer-logo {
-  margin: 15px;
+  margin: 50px 0;
 }
 
 .footer-logo a {
@@ -569,16 +569,11 @@ fieldset {
 .footer-container p {
   color: var(--color-gray);
   font-size: 1.3rem;
-  font-weight: 700;
   letter-spacing: 1px;
-  padding-bottom: 20px;
+  padding-bottom: 56px;
 }
 
 /* FEL GOMB */
-
-.fel-box {
-  margin: 5px;
-}
 
 .fa-solid {
   position: fixed;
@@ -596,6 +591,8 @@ fieldset {
 .fa-solid:hover {
   color: var(--color-white);
 }
+
+/* MEDIA QUERY */
 
 @media (min-width: 400px) {
   .hamburger-button__title {
