@@ -265,9 +265,9 @@ a {
   margin-top: 20px;
 }
 
-.header-btn:hover {
-  color: #060c10;
-  background-color: #fff;
+.header-btn:checked {
+  color: var(--header-background-color);
+  background-color: var(--color-white);
 }
 
 /* ROLAM SECTION */
@@ -402,7 +402,7 @@ a {
   margin-top: 3px;
 }
 .no-content {
-  height: 1265px;
+  height: 1180px;
 }
 
 .tech-container {
@@ -482,12 +482,8 @@ a {
   align-items: center;
 }
 
-.fa-solid:hover {
+.fa-solid:checked {
   color: var(--color-white);
-}
-
-.fel-box img {
-  width: 30px;
 }
 
 @media (min-width: 400px) {
