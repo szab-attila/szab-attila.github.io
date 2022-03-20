@@ -265,7 +265,7 @@ a {
   margin-top: 20px;
 }
 
-.header-btn:checked {
+.header-btn:hover {
   color: var(--header-background-color);
   background-color: var(--color-white);
 }
@@ -402,7 +402,7 @@ a {
   margin-top: 3px;
 }
 .no-content {
-  height: 1180px;
+  height: 1260px;
 }
 
 .tech-container {
@@ -472,7 +472,7 @@ a {
 .fa-solid {
   position: fixed;
   bottom: 32px;
-  left: 313px;
+  right: 13px;
   width: 44px;
   height: 44px;
   background: var(--header-background-color);
@@ -482,7 +482,7 @@ a {
   align-items: center;
 }
 
-.fa-solid:checked {
+.fa-solid:hover {
   color: var(--color-white);
 }
 
