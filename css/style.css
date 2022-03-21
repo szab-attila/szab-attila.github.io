@@ -144,6 +144,7 @@ fieldset {
   visibility: hidden;
   color: var(--color-green);
   font-size: 14px;
+  font-weight: 700;
   position: fixed;
   top: 48px;
   right: 65px;
@@ -213,7 +214,7 @@ fieldset {
   visibility: visible;
 }
 
-#menu__toggle:checked ~ .hamburger-button .hamburger-button__title-box {
+#menu__toggle:checked ~ .hamburger-button .hamburger-button-title__box {
   visibility: hidden;
 }
 
@@ -632,6 +633,7 @@ fieldset {
   .hamburger-button__title {
     visibility: visible;
     font-size: 14px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: var(--color-green);
@@ -642,7 +644,7 @@ fieldset {
     cursor: pointer;
   }
 
-  .hamburger-button__title-box {
+  .hamburger-button-title__box {
     position: fixed;
     top: 32px;
     right: 57px;
