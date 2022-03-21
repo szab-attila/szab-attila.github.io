@@ -83,6 +83,10 @@ fieldset {
   visibility: hidden;
 }
 
+.hamburger-menu {
+  min-height: 61px;
+}
+
 .hamburger-button {
   display: flex;
   justify-content: flex-end;
@@ -96,6 +100,10 @@ fieldset {
   cursor: pointer;
   z-index: 100;
   padding-right: 10px;
+}
+
+.hamburger-button__title {
+  visibility: hidden;
 }
 
 .hamburger-lines,
@@ -133,17 +141,19 @@ fieldset {
 }
 
 .header-nav-content__title {
+  visibility: hidden;
   color: var(--color-green);
   font-size: 14px;
   position: fixed;
   top: 48px;
   right: 65px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
-.hamburger-button__title {
-  visibility: hidden;
+.header-nav-content__title:hover {
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 .header-nav-content__links:first-child {
@@ -196,6 +206,14 @@ fieldset {
 }
 
 #menu__toggle:checked ~ .hamburger-button .hamburger-button__title {
+  visibility: hidden;
+}
+
+#menu__toggle:checked ~ .hamburger-button .header-nav-content__title {
+  visibility: visible;
+}
+
+#menu__toggle:checked ~ .hamburger-button .hamburger-button__title-box {
   visibility: hidden;
 }
 
@@ -611,6 +629,30 @@ fieldset {
 /* MEDIA QUERY */
 
 @media (min-width: 576px) {
+  .hamburger-button__title {
+    visibility: visible;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color-green);
+  }
+
+  .hamburger-button__title:hover {
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  .hamburger-button__title-box {
+    position: fixed;
+    top: 32px;
+    right: 57px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70px;
+    height: 44px;
+    background-color: var(--header-background-color);
+  }
 }
 
 @media (min-width: 768px) {
@@ -621,23 +663,3 @@ fieldset {
 
 @media (min-width: 1200px) {
 }
-
-/* @media (max-width: 400px) {
-  .hamburger-button__title {
-    display: none;
-  }
-
-  .hamburger-button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: var(--header-background-color);
-    padding: 20px;
-    position: fixed;
-    top: 33px;
-    right: 32px;
-    width: 6.5rem;
-    height: 2.5rem;
-    cursor: pointer;
-    z-index: 1;
-  } */
