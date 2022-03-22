@@ -31,10 +31,8 @@
 </head>
 
 <body>
-    <!-- HEADER -->
     <header id="header" class="header-box">
         <nav class="header-nav">
-            <!-- LOGO -->
             <h1 class="logo" id="logo">
                 <a href="">Attila<span>.</span>
                 </a>
@@ -49,23 +47,23 @@
                     <div class="hamburger-button-title__box">
                         <span class="hamburger-button__title">Menü</span>
                     </div>
-                    <span class="header-nav-content__title">Bezárás</span>
+                    <span class="menu-box__title">Bezárás</span>
                 </label>
 
-                <div class="header-nav__content">
+                <div class="menu__box">
                     <ul>
-                        <li class="header-nav-content__links"><a class="menu-item" href="#header">Főoldal</a></li>
-                        <li class="header-nav-content__links"><a class="menu-item" href="#referencia">Referenciák</a>
+                        <li class="menu__item"><a class="menu-item__links" href="#header">Főoldal</a></li>
+                        <li class="menu__item"><a class="menu-item__links" href="#referencia">Referenciák</a>
                         </li>
-                        <li class="header-nav-content__links"><a class="menu-item" href="#tapasztalat">Tapasztalat</a>
+                        <li class="menu__item"><a class="menu-item__links" href="#tapasztalat">Tapasztalat</a>
                         </li>
-                        <li class="header-nav-content__links"><a class="menu-item" href="#kapcsolat">Kapcsolat</a>
+                        <li class="menu__item"><a class="menu-item__links" href="#kapcsolat">Kapcsolat</a>
                         </li>
                     </ul>
 
-                    <p class="header-bekezdes">Weboldal tervek készítése és kivitelezése egyedi igények szerint.
+                    <p>Weboldal tervek készítése és kivitelezése egyedi igények szerint.
                         Kérjen ingyenesen árajánlatot személyre szabva!</p>
-                    <ul class="header-nav__social">
+                    <ul class="menu-box__social">
                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -81,16 +79,28 @@
                 Kérjen ingyenesen árajánlatot személyre szabva!</p>
             <a class="header-btn  btn-rolam" href="#rolam">Rólam</a>
             <a class="header-btn  btn-kontakt" href="#kapcsolat">Kontakt</a>
+            <!-- SOCIAL MEDIA LINKS -->
+            <ul class="header-list">
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
 
 
-        <!-- SOCIAL MEDIA LINKS -->
-        <!-- <ul class="header-list">
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-        </ul> -->
     </header>
-    <!-- MAIN -->
     <main class="main-container">
         <section id="rolam" class="rolam-section">
             <div class="rolam-content">
@@ -113,45 +123,37 @@
                 <p>Weboldal referenciák</p>
                 <span class="line-color"></span>
             </div>
-            <div class="ref-row">
-                <div class="ref-col">
-                    <div class="project-container">
-                        <a href="#"><img src="./assets/images/pinpng.com-coming-soon-png-565839.png"
-                                alt="wolfreinigung loto"></a>
-                        <div class="container-heading">
-                            <h3>WolfReinigung</h3>
-                        </div>
-                        <div class="container-content">
-                            <p>Takarítással és ház körüli munkákkal foglalkozó ausztriai kisvállalkozás.</p>
-                        </div>
 
-                    </div>
-                    <div class="project-container">
-                        <a href="#"><img src="./assets/images/pinpng.com-coming-soon-png-565839.png"
-                                alt="wolfreinigung loto"></a>
-                        <div class="container-heading">
-                            <h3>Projekt 2</h3>
-                        </div>
-                        <div class="container-content">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, at dolores dicta
-                                perferendis soluta quos praesentium magni nostrum non ipsam commodi corporis tempore
-                                doloremque, aperiam quaerat. Iste enim rerum libero?</p>
-                        </div>
+            <div class="ref-col">
+                <div class="project-container">
+                    <a href="#">
+                        <img src="./assets/images/pinpng.com-coming-soon-png-565839.png" alt="wolfreinigung loto">
+                    </a>
+                    <h3>WolfReinigung</h3>
+                    <p>Takarítással és ház körüli munkákkal foglalkozó ausztriai kisvállalkozás.</p>
 
-                    </div>
-                    <div class="project-container">
-                        <a href="#"><img src="./assets/images/pinpng.com-coming-soon-png-565839.png"
-                                alt="wolfreinigung loto"></a>
-                        <div class="container-heading">
-                            <h3>Projekt 3</h3>
-                        </div>
-                        <div class="container-content projekt-3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officia provident ex
-                                rerum dolores ea earum, fugiat tempora eaque, ad sequi. Corporis expedita sit
-                                dignissimos recusandae consequatur inventore debitis accusantium?</p>
-                        </div>
 
-                    </div>
+                </div>
+                <div class="project-container">
+                    <a href="#">
+                        <img src="./assets/images/pinpng.com-coming-soon-png-565839.png" alt="wolfreinigung loto">
+                    </a>
+                    <h3>Projekt 2</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, at dolores dicta
+                        perferendis soluta quos praesentium magni nostrum non ipsam commodi corporis tempore
+                        doloremque, aperiam quaerat. Iste enim rerum libero?</p>
+                </div>
+
+
+                <div class="project-container">
+                    <a href="#">
+                        <img src="./assets/images/pinpng.com-coming-soon-png-565839.png" alt="wolfreinigung loto">
+                    </a>
+                    <h3>Projekt 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officia provident ex
+                        rerum dolores ea earum, fugiat tempora eaque, ad sequi. Corporis expedita sit
+                        dignissimos recusandae consequatur inventore debitis accusantium?</p>
+
 
                 </div>
             </div>
@@ -164,7 +166,7 @@
                     <span class="line"></span>
                 </div>
             </div>
-            <div class="no-content"></div>
+            <div class="empty-container"></div>
             <div class="tech-container">
                 <div class="item item_1">
                     <h3>HTML5</h3>

@@ -13,14 +13,6 @@
   --color-gray: #86898b;
 }
 
-/* --------------------------------- */
-/* Tervezési segítség, késöbb törlöm */
-/* --------------------------------- */
-img {
-  width: 100%;
-  height: auto;
-}
-
 /* ------------------ */
 /* Általános stílusok */
 /* ------------------ */
@@ -54,6 +46,9 @@ fieldset {
 /* ------ */
 
 .header-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   min-height: 100vh;
   background-color: var(--header-background-color);
@@ -62,7 +57,7 @@ fieldset {
 
 .logo {
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: 35px;
   left: 35px;
 }
@@ -126,7 +121,7 @@ fieldset {
   top: 9px;
 }
 
-.header-nav__content {
+.menu__box {
   display: block;
   position: fixed;
   padding: 62px 25px 0 45px;
@@ -140,69 +135,73 @@ fieldset {
   z-index: 10;
 }
 
-.header-nav-content__title {
+.menu-box__title {
   visibility: hidden;
   color: var(--color-green);
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   position: fixed;
-  top: 48px;
-  right: 65px;
+  top: 49px;
+  right: 52px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 
-.header-nav-content__title:hover {
+.menu-box__title:hover {
   color: var(--color-white);
   cursor: pointer;
 }
 
-.header-nav-content__links:first-child {
+.header-list {
+  visibility: hidden;
+}
+
+.menu__item:first-child {
   margin-top: 70px;
 }
 
-.fa-brands:hover {
+.menu-box__social li a i:hover {
   color: var(--color-white);
 }
 
-.menu-item {
+.menu-item__links {
   display: block;
   margin: 15px 0;
   color: var(--color-white);
 }
 
-.menu-item:last-child {
+.menu-item__links:last-child {
   margin-bottom: 0;
 }
 
-.menu-item:hover {
+.menu-item__links:hover {
   text-shadow: 2px 2px 6px #fff;
 }
 
-.menu-item a {
+.menu-item__links a {
   font-size: 1.8rem;
   color: var(--color-white);
 }
 
-.header-nav__content p {
+.menu__box p {
   color: var(--color-gray);
   font-size: 1.3rem;
   padding: 50px 0;
   line-height: 2.5rem;
 }
 
-.header-nav__social {
+.menu-box__social {
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
 }
 
-.header-nav__social li a {
+.menu-box__social li a {
   color: var(--color-gray);
   margin-right: 15px;
 }
 
-#menu__toggle:checked ~ .header-nav__content {
+#menu__toggle:checked ~ .menu__box {
   visibility: visible;
 }
 
@@ -210,7 +209,7 @@ fieldset {
   visibility: hidden;
 }
 
-#menu__toggle:checked ~ .hamburger-button .header-nav-content__title {
+#menu__toggle:checked ~ .hamburger-button .menu-box__title {
   visibility: visible;
 }
 
@@ -382,25 +381,29 @@ fieldset {
   margin: auto;
 }
 
+.ref-col:last-child {
+  margin-bottom: 25px;
+}
+
 .project-container {
   max-width: 80%;
   margin: 20px;
 }
 
-.container-heading {
+.project-container img {
+  width: 100%;
+}
+
+.project-container h3 {
   margin: 15px 0;
   color: var(--header-background-color);
 }
 
-.container-content {
+.project-container p {
   color: var(--color-gray);
   font-size: 1.5rem;
   line-height: 23px;
   text-shadow: 0 0 1px var(--color-gray);
-}
-
-.projekt-3 {
-  margin-bottom: 25px;
 }
 
 /* TAPASZTALAT */
@@ -439,7 +442,7 @@ fieldset {
   text-align: center;
   margin-top: 3px;
 }
-.no-content {
+.empty-container {
   height: 1190px;
 }
 
@@ -632,8 +635,8 @@ fieldset {
 @media (min-width: 576px) {
   .hamburger-button__title {
     visibility: visible;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: var(--color-green);
@@ -654,6 +657,55 @@ fieldset {
     width: 70px;
     height: 44px;
     background-color: var(--header-background-color);
+  }
+
+  .header-sec-box {
+    /* width: 95%; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+  }
+
+  .header-sec-box h2 {
+    font-size: 1.6rem;
+    color: var(--color-gray);
+    text-transform: uppercase;
+    /* margin-top: 4rem;
+    margin-bottom: 15px; */
+    letter-spacing: 0.3rem;
+  }
+
+  .header-sec-box p {
+    color: var(--color-white);
+    font-size: 30px;
+    line-height: 4rem;
+    font-weight: 600;
+    /* max-width: 80%;
+    margin: 0 auto; */
+  }
+
+  .header-btn {
+    display: block;
+    border: 1px solid var(--color-white);
+    max-width: 80%;
+    width: 100%;
+    padding: 20px;
+    /* margin: 0 auto; */
+    background: transparent;
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  .header-list {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-list li a i:hover {
+    color: red;
   }
 }
 
