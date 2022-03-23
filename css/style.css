@@ -22,6 +22,7 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -88,8 +89,8 @@ fieldset {
   align-items: center;
   background-color: var(--header-background-color);
   position: fixed;
-  top: 32px;
-  right: 13px;
+  top: 35px;
+  right: 35px;
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -133,16 +134,19 @@ fieldset {
   letter-spacing: 1px;
   visibility: hidden;
   z-index: 10;
+
+  right: -250px;
+  transition-duration: 0.6s;
 }
 
 .menu-box__title {
   visibility: hidden;
   color: var(--color-green);
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 600;
   position: fixed;
-  top: 49px;
-  right: 52px;
+  top: 51px;
+  right: 72px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -150,10 +154,6 @@ fieldset {
 .menu-box__title:hover {
   color: var(--color-white);
   cursor: pointer;
-}
-
-.header-list {
-  visibility: hidden;
 }
 
 .menu__item:first-child {
@@ -166,7 +166,7 @@ fieldset {
 
 .menu-item__links {
   display: block;
-  margin: 15px 0;
+  margin: 20px 0;
   color: var(--color-white);
 }
 
@@ -203,6 +203,7 @@ fieldset {
 
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
+  right: 0;
 }
 
 #menu__toggle:checked ~ .hamburger-button .hamburger-button__title {
@@ -253,7 +254,7 @@ fieldset {
 
 .header-sec-box p {
   color: var(--color-white);
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 4rem;
   font-weight: 600;
   max-width: 80%;
@@ -288,6 +289,10 @@ fieldset {
   background-color: var(--color-white);
 }
 
+.header-social-media {
+  visibility: hidden;
+}
+
 /* ROLAM SECTION */
 
 .rolam-section {
@@ -303,14 +308,14 @@ fieldset {
 
 .rolam-content h2 {
   color: var(--header-background-color);
-  font-size: 15px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-top: 80px;
 }
 
 .rolam-content h3 {
-  font-size: 35px;
+  font-size: 3.5rem;
   color: var(--color-white);
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -358,7 +363,7 @@ fieldset {
 
 .ref-content h2 {
   color: var(--color-green);
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-top: 80px;
@@ -366,7 +371,7 @@ fieldset {
 
 .ref-content p {
   display: inline-block;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--header-background-color);
   letter-spacing: 1px;
@@ -426,7 +431,7 @@ fieldset {
 
 .tech-heading h2 {
   color: var(--color-green);
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-top: 80px;
@@ -435,7 +440,7 @@ fieldset {
 
 .tech-heading p {
   display: inline-block;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--color-white);
   letter-spacing: 1px;
@@ -482,7 +487,7 @@ fieldset {
 
 .contact-container h2 {
   color: var(--color-green);
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-top: 80px;
@@ -491,7 +496,7 @@ fieldset {
 
 .contact-container p {
   display: inline-block;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--color-white);
   letter-spacing: 2px;
@@ -615,8 +620,8 @@ fieldset {
 
 .fa-solid {
   position: fixed;
-  bottom: 32px;
-  right: 13px;
+  bottom: 35px;
+  right: 35px;
   width: 44px;
   height: 44px;
   background: var(--header-background-color);
@@ -635,7 +640,7 @@ fieldset {
 @media (min-width: 576px) {
   .hamburger-button__title {
     visibility: visible;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -649,8 +654,8 @@ fieldset {
 
   .hamburger-button-title__box {
     position: fixed;
-    top: 32px;
-    right: 57px;
+    top: 35px;
+    right: 75px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -660,27 +665,26 @@ fieldset {
   }
 
   .header-sec-box {
-    /* width: 95%; */
-    /* margin: 0 auto; */
-    /* text-align: center; */
+    display: flex;
+    align-items: center;
+  }
+
+  .header-sec-box-content {
   }
 
   .header-sec-box h2 {
     font-size: 1.6rem;
     color: var(--color-gray);
     text-transform: uppercase;
-    /* margin-top: 4rem;
-    margin-bottom: 15px; */
+    margin-bottom: 15px;
     letter-spacing: 0.3rem;
   }
 
   .header-sec-box p {
     color: var(--color-white);
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 4rem;
     font-weight: 600;
-    /* max-width: 80%;
-    margin: 0 auto; */
   }
 
   .header-btn {
@@ -689,7 +693,6 @@ fieldset {
     max-width: 80%;
     width: 100%;
     padding: 20px;
-    /* margin: 0 auto; */
     background: transparent;
     color: var(--color-white);
     text-transform: uppercase;
@@ -698,14 +701,26 @@ fieldset {
     font-size: 1.2rem;
   }
 
-  .header-list {
+  .header-social-media {
     visibility: visible;
     display: flex;
     flex-direction: column;
   }
 
+  .header-list {
+    margin-right: 25px;
+  }
+
+  .header-list a {
+    color: #fff;
+  }
+
+  .header-list li:nth-child(2) {
+    margin: 20px 0;
+  }
+
   .header-list li a i:hover {
-    color: red;
+    color: var(--color-green);
   }
 }
 
