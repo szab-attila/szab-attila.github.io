@@ -28,6 +28,7 @@ html {
 body {
   min-width: 330px;
   font-size: 2rem;
+  overflow-x: hidden;
 }
 
 li {
@@ -53,14 +54,14 @@ fieldset {
   width: 100%;
   min-height: 100vh;
   background-color: var(--header-background-color);
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
 }
 
 .logo {
   display: inline-block;
   position: absolute;
-  top: 35px;
-  left: 35px;
+  top: 3.5rem;
+  left: 3.5rem;
 }
 
 .logo a {
@@ -89,8 +90,8 @@ fieldset {
   align-items: center;
   background-color: var(--header-background-color);
   position: fixed;
-  top: 31px;
-  right: 35px;
+  top: 3.1rem;
+  right: 3.5rem;
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -107,19 +108,19 @@ fieldset {
 .hamburger-lines::after {
   display: block;
   position: absolute;
-  width: 2.5rem;
+  width: 25px;
   height: 1.5px;
   background-color: var(--color-white);
 }
 
 .hamburger-lines::before {
   content: "";
-  top: -9px;
+  top: -0.9rem;
 }
 
 .hamburger-lines::after {
   content: "";
-  top: 9px;
+  top: 0.9rem;
 }
 
 .menu__box {
@@ -238,8 +239,6 @@ fieldset {
 }
 
 .header-sec-box {
-  width: 95%;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -247,14 +246,13 @@ fieldset {
   font-size: 1.6rem;
   color: var(--color-gray);
   text-transform: uppercase;
-  margin-top: 4rem;
   margin-bottom: 15px;
   letter-spacing: 0.3rem;
 }
 
-.header-sec-box p {
+.header-sec-box-content p {
   color: var(--color-white);
-  font-size: 3rem;
+  font-size: 3.3rem;
   line-height: 4rem;
   font-weight: 600;
   max-width: 80%;
@@ -264,7 +262,7 @@ fieldset {
 .header-btn {
   display: block;
   border: 1px solid var(--color-white);
-  max-width: 80%;
+  max-width: 300px;
   width: 100%;
   padding: 20px;
   margin: 0 auto;
@@ -277,7 +275,7 @@ fieldset {
 }
 
 .btn-rolam {
-  margin-top: 60px;
+  margin-top: 6rem;
 }
 
 .btn-kontakt {
@@ -289,8 +287,8 @@ fieldset {
   background-color: var(--color-white);
 }
 
-.header-social-media {
-  visibility: hidden;
+.header-list {
+  display: none;
 }
 
 /* ROLAM SECTION */
@@ -666,48 +664,53 @@ fieldset {
 
   .header-sec-box {
     display: flex;
-    align-items: center;
-  }
-
-  .header-sec-box-content {
+    flex-direction: column;
   }
 
   .header-sec-box h2 {
     font-size: 1.6rem;
     color: var(--color-gray);
     text-transform: uppercase;
-    margin-bottom: 15px;
     letter-spacing: 0.3rem;
+    margin-left: 2rem;
+    text-align: left;
   }
 
-  .header-sec-box p {
+  .header-sec-box-content {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .header-sec-box-content p {
     color: var(--color-white);
-    font-size: 3rem;
+    font-size: 3.6rem;
     line-height: 4rem;
     font-weight: 600;
+    margin-left: 2rem;
+    max-width: 430px;
   }
 
   .header-btn {
     display: block;
     border: 1px solid var(--color-white);
-    max-width: 80%;
-    width: 100%;
+    max-width: 315px;
+    width: 50%;
     padding: 20px;
     background: transparent;
     color: var(--color-white);
     text-transform: uppercase;
-    letter-spacing: 5px;
+    text-align: center;
+    letter-spacing: 0.5rem;
     font-weight: 400;
     font-size: 1.2rem;
-  }
-
-  .header-social-media {
-    visibility: visible;
-    display: flex;
-    flex-direction: column;
+    margin-left: 2rem;
   }
 
   .header-list {
+    display: flex;
+    flex-direction: column;
     margin-right: 25px;
   }
 
@@ -715,8 +718,15 @@ fieldset {
     color: #fff;
   }
 
+  .header-list li {
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    line-height: 0;
+    padding: 1rem;
+  }
+
   .header-list li:nth-child(2) {
-    margin: 20px 0;
+    margin: 4rem 0;
   }
 
   .header-list li a i:hover {
@@ -725,10 +735,19 @@ fieldset {
 }
 
 @media (min-width: 768px) {
+  .header-sec-box-content p {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 992px) {
+  .header-sec-box-content p {
+    font-size: 4.6rem;
+  }
 }
 
 @media (min-width: 1200px) {
+  .header-sec-box-content p {
+    font-size: 5.5rem;
+  }
 }
