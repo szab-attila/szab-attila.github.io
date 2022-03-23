@@ -89,7 +89,7 @@ fieldset {
   align-items: center;
   background-color: var(--header-background-color);
   position: fixed;
-  top: 35px;
+  top: 31px;
   right: 35px;
   width: 44px;
   height: 44px;
@@ -654,7 +654,7 @@ fieldset {
 
   .hamburger-button-title__box {
     position: fixed;
-    top: 35px;
+    top: 31px;
     right: 75px;
     display: flex;
     justify-content: flex-end;
