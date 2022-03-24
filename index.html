@@ -66,7 +66,7 @@
                     <ul class="menu-box__social">
                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
 
@@ -79,6 +79,8 @@
             <div class="header-sec-box-content">
                 <p>Weboldal tervek készítése és kivitelezése egyedi igények szerint.
                     Kérjen ingyenesen árajánlatot személyre szabva!</p>
+
+                <!-- SOCIAL MEDIA LINKS -->
                 <ul class="header-list">
                     <li>
                         <a href="#">
@@ -98,11 +100,17 @@
                 </ul>
             </div>
 
-            <a class="header-btn  btn-rolam" href="#rolam">Rólam</a>
-            <a class="header-btn  btn-kontakt" href="#kapcsolat">Kontakt</a>
+            <div class="btn-flex">
+                <a class="header-btn  btn-rolam" href="#rolam">Rólam</a>
+
+                <a class="header-btn  btn-kontakt" href="#kapcsolat">Kontakt</a>
+            </div>
 
 
-            <!-- SOCIAL MEDIA LINKS -->
+
+
+
+
 
 
 
@@ -272,7 +280,7 @@
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 1000, function () {
+                    }, 500, function () {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
