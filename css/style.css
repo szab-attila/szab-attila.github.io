@@ -293,7 +293,13 @@ fieldset {
 /* ROLAM SECTION */
 
 .rolam-section {
-  background-color: var(--color-green);
+  background: rgb(57, 181, 74);
+  background: radial-gradient(
+    circle,
+    rgba(57, 181, 74, 1) 0%,
+    rgba(57, 181, 74, 1) 65%,
+    rgba(255, 255, 255, 1) 100%
+  );
   text-align: center;
   height: 100vh;
   display: flex;
@@ -313,7 +319,6 @@ fieldset {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding-top: 80px;
 }
 
 .rolam-content h3 {
@@ -326,18 +331,10 @@ fieldset {
 .rolam-content p {
   max-width: 80%;
   margin: 0 auto;
-  line-height: 30px;
+  line-height: 3.7rem;
 }
 
 .line {
-  width: 220px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.325);
-  display: inline-block;
-  margin: 20px 0;
-}
-
-.rolam-last-line {
   width: 220px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.325);
@@ -745,7 +742,7 @@ fieldset {
   }
 
   .rolam-content p {
-    line-height: 35px;
+    line-height: 3.9rem;
     font-size: 2.2rem;
   }
 }
@@ -797,5 +794,24 @@ fieldset {
 @media (min-width: 1200px) {
   .header-sec-box-content p {
     max-width: 55%;
+  }
+
+  .rolam-content h3 {
+    font-size: 5.5rem;
+    max-width: 620px;
+  }
+
+  .rolam-content p {
+    line-height: 4.5rem;
+    font-size: 2.5rem;
+    max-width: 53%;
+  }
+
+  .line {
+    width: 430px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.325);
+    display: inline-block;
+    margin: 50px 0px;
   }
 }
