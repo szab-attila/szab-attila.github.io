@@ -294,12 +294,6 @@ fieldset {
 
 .rolam-section {
   background: rgb(57, 181, 74);
-  background: radial-gradient(
-    circle,
-    rgba(57, 181, 74, 1) 0%,
-    rgba(57, 181, 74, 1) 65%,
-    rgba(255, 255, 255, 1) 100%
-  );
   text-align: center;
   height: 100vh;
   display: flex;
@@ -757,6 +751,7 @@ fieldset {
 
   .header-sec-box-content p {
     font-size: 4rem;
+    line-height: 4.9rem;
   }
 
   .btn-flex {
@@ -767,6 +762,7 @@ fieldset {
   .header-btn {
     display: inline-block;
     width: 215px;
+    margin-right: 1rem;
   }
 
   .header-list li {
@@ -791,9 +787,9 @@ fieldset {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .header-sec-box-content p {
-    max-width: 55%;
+    flex-basis: 980px;
   }
 
   .rolam-content h3 {
