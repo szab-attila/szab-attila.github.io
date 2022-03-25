@@ -384,17 +384,21 @@ fieldset {
 }
 
 .project-container {
-  max-width: 80%;
+  max-width: 70%;
   margin: 20px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
 }
 
 .project-container img {
-  width: 100%;
+  width: 80%;
+  margin-top: 4rem;
 }
 
 .project-container h3 {
-  margin: 15px 0;
+  width: 80%;
+  margin: 2rem auto;
   color: var(--header-background-color);
+  font-size: 2.5rem;
 }
 
 .project-container p {
@@ -402,6 +406,8 @@ fieldset {
   font-size: 1.5rem;
   line-height: 23px;
   text-shadow: 0 0 1px var(--color-gray);
+  width: 85%;
+  margin: 0 auto 2rem;
 }
 
 /* TAPASZTALAT */
@@ -428,7 +434,6 @@ fieldset {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-top: 80px;
-  text-align: center;
 }
 
 .tech-heading p {
@@ -441,7 +446,7 @@ fieldset {
   margin-top: 3px;
 }
 .empty-container {
-  height: 1190px;
+  height: 1290px;
 }
 
 .tech-container {
@@ -630,13 +635,25 @@ fieldset {
 
 /* MEDIA QUERY */
 
+@media (min-width: 375px) {
+  .empty-container {
+    height: 1215px;
+  }
+}
+
+@media (min-width: 425px) {
+  .empty-container {
+    height: 1170px;
+  }
+}
+
 @media (min-width: 576px) {
   .hamburger-button__title {
     visibility: visible;
     font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 0.4rem;
     color: var(--color-green);
   }
 
@@ -647,13 +664,13 @@ fieldset {
 
   .hamburger-button-title__box {
     position: fixed;
-    top: 31px;
-    right: 75px;
+    top: 3.1rem;
+    right: 7.5rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 70px;
-    height: 44px;
+    width: 7rem;
+    height: 4.4rem;
     background-color: var(--header-background-color);
   }
 
@@ -665,10 +682,6 @@ fieldset {
   }
 
   .header-sec-box h2 {
-    font-size: 1.6rem;
-    color: var(--color-gray);
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
     text-align: left;
   }
 
@@ -680,27 +693,16 @@ fieldset {
   }
 
   .header-sec-box-content p {
-    color: var(--color-white);
     font-size: 3.6rem;
     line-height: 4.3rem;
-    font-weight: 600;
     margin: 0;
     max-width: 80%;
   }
 
   .header-btn {
-    display: block;
-    border: 1px solid var(--color-white);
-    max-width: 315px;
-    width: 50%;
-    padding: 20px;
-    background: transparent;
-    color: var(--color-white);
-    text-transform: uppercase;
+    max-width: 31.5rem;
     text-align: center;
     letter-spacing: 0.5rem;
-    font-weight: 400;
-    font-size: 1.2rem;
     margin: 0;
   }
 
@@ -732,12 +734,45 @@ fieldset {
 
   .rolam-content h3 {
     font-size: 5.5rem;
-    max-width: 300px;
+    max-width: 30rem;
   }
 
   .rolam-content p {
     line-height: 3.9rem;
     font-size: 2.2rem;
+  }
+
+  .ref-content h2 {
+    font-size: 2rem;
+  }
+
+  .ref-content p {
+    font-size: 4.5rem;
+  }
+
+  .empty-container {
+    height: 1070px;
+  }
+
+  .tech-content {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .tech-heading {
+    height: 790px;
+  }
+
+  .tech-heading h2 {
+    font-size: 2rem;
+  }
+
+  .tech-heading p {
+    font-size: 4.5rem;
+  }
+
+  .tech-container {
+    top: 325px;
   }
 }
 
@@ -746,7 +781,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     max-width: 85%;
-    margin: 0 40px 0 auto;
+    margin: 0 4rem 0 auto;
   }
 
   .header-sec-box-content p {
@@ -755,7 +790,7 @@ fieldset {
   }
 
   .btn-flex {
-    width: 500px;
+    width: 50rem;
     text-align: left;
   }
 
@@ -770,6 +805,17 @@ fieldset {
     border-radius: 50%;
     line-height: 0;
     padding: 0.7rem;
+  }
+
+  .project-container h3 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .project-container p {
+    font-size: 1.7rem;
+    text-align: left;
+    width: 80%;
   }
 }
 
@@ -794,7 +840,7 @@ fieldset {
 
   .rolam-content h3 {
     font-size: 5.5rem;
-    max-width: 620px;
+    max-width: 62rem;
   }
 
   .rolam-content p {
@@ -804,10 +850,10 @@ fieldset {
   }
 
   .line {
-    width: 430px;
-    height: 1px;
+    width: 43rem;
+    height: 0.1rem;
     background-color: rgba(255, 255, 255, 0.325);
     display: inline-block;
-    margin: 50px 0px;
+    margin: 5rem 0;
   }
 }
