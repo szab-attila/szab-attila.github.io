@@ -376,11 +376,7 @@ fieldset {
   flex-direction: column;
   align-items: center;
   width: 85%;
-  margin: auto;
-}
-
-.ref-col:last-child {
-  margin-bottom: 6rem;
+  margin: 0 auto 10rem;
 }
 
 .project-container {
