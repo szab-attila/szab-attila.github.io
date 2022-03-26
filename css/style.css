@@ -562,11 +562,11 @@ fieldset {
   border: none;
   background-color: var(--color-green);
   width: 100%;
-  padding: 20px;
-  margin-bottom: 30px;
+  padding: 2rem;
+  margin-bottom: 5rem;
   color: var(--color-white);
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 0.5rem;
   font-weight: 700;
   cursor: pointer;
   font-size: 1.2rem;
@@ -1029,17 +1029,17 @@ fieldset {
 
   .form h2 {
     text-align: left;
-    padding: 3rem 0;
+    padding: 6rem 0 5rem;
   }
 
   .contact-flexbox {
     display: flex;
     width: 80%;
-    margin: 0 auto;
+    margin: 3rem auto 0;
   }
 
   .contact-info {
-    width: 40%;
+    max-width: 32rem;
     padding: 0;
     background-color: var(--header-background-color);
   }
@@ -1050,7 +1050,7 @@ fieldset {
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 3rem 0;
+    padding: 6rem 0 5rem;
     margin: 0 auto 3rem auto;
     width: 75%;
   }
@@ -1080,5 +1080,9 @@ fieldset {
 @media (min-width: 1600px) {
   .item {
     min-width: 500px;
+  }
+
+  .contact-flexbox {
+    width: 55%;
   }
 }
