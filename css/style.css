@@ -775,7 +775,7 @@ fieldset {
   }
 
   .item {
-    width: 285px;
+    width: 279px;
   }
 
   .item_3 h3,
@@ -1091,7 +1091,7 @@ fieldset {
   }
 
   .item {
-    width: 400px;
+    width: 394px;
   }
 
   .item h3 {
@@ -1110,12 +1110,7 @@ fieldset {
     color: #fff;
   }
 
-  .item_4 {
-    margin-right: 0;
-  }
-
   .item_5 {
-    margin-left: 0;
     height: 350px;
   }
 
@@ -1167,21 +1162,12 @@ fieldset {
   }
 
   .item {
-    width: 480px;
+    width: 474px;
   }
 }
 
 @media (min-width: 1600px) {
-  .contact-flexbox {
-    width: 55%;
-  }
-
-  .item_4 p,
-  .item_5 p {
-    color: #fff;
-  }
-
-  .empty-container {
-    background-color: #060c10;
+  .item {
+    width: 527px;
   }
 }
