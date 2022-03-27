@@ -387,12 +387,11 @@ fieldset {
   max-width: 90%;
   margin: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: transform 1s;
+  transition: box-shadow 0.8s;
 }
 
 .project-container:hover {
   box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
-  transform: rotate(1deg);
 }
 
 .project-container img {
