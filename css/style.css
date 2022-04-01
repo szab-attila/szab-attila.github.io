@@ -127,7 +127,7 @@ fieldset {
   display: block;
   position: fixed;
   padding: 62px 25px 0 45px;
-  width: 250px;
+  width: 100vw;
   background-color: var(--header-background-color);
   top: 0;
   right: 0;
@@ -135,8 +135,7 @@ fieldset {
   letter-spacing: 1px;
   visibility: hidden;
   z-index: 10;
-
-  right: -250px;
+  top: -250px;
   transition-duration: 0.6s;
 }
 
@@ -204,7 +203,7 @@ fieldset {
 
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
-  right: 0;
+  top: 0;
 }
 
 #menu__toggle:checked ~ .hamburger-button .hamburger-button__title {
