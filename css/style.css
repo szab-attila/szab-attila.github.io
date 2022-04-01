@@ -728,6 +728,17 @@ fieldset {
     color: var(--color-green);
   }
 
+  .menu__box {
+    width: 250px;
+    top: 0;
+    right: -250px;
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+
   .rolam-content h2 {
     font-size: 2rem;
     line-height: 4rem;
