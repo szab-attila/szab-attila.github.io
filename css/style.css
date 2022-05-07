@@ -307,7 +307,7 @@ fieldset {
 .rolam-section {
   background: rgb(57, 181, 74);
   text-align: center;
-  height: 700px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,7 +329,7 @@ fieldset {
 
 .rolam-content h2,
 .rolam-content h3 {
-  max-width: 280px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -338,7 +338,6 @@ fieldset {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 90px auto 10px;
 }
 
 .rolam-content h3 {
@@ -346,9 +345,11 @@ fieldset {
   color: var(--color-white);
   text-transform: capitalize;
   letter-spacing: 1px;
+  margin-top: 15px;
 }
 
 .rolam-content p {
+  min-width: 315px;
   max-width: 80%;
   margin: 0 auto;
   line-height: 3.7rem;
