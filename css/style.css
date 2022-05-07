@@ -53,7 +53,15 @@ fieldset {
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-color: var(--header-background-color);
+  background-image: linear-gradient(
+      93deg,
+      rgba(6, 12, 16, 0.8),
+      rgba(6, 12, 16, 0.8)
+    ),
+    url(/szab.attila.github.io/assets/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   padding-bottom: 3rem;
 }
 
@@ -258,6 +266,10 @@ fieldset {
   margin: 0 auto;
 }
 
+.header-img {
+  display: none;
+}
+
 .header-btn {
   display: block;
   border: 1px solid var(--color-white);
@@ -295,11 +307,24 @@ fieldset {
 .rolam-section {
   background: rgb(57, 181, 74);
   text-align: center;
-  height: 100vh;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.proba-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.its-me {
+  width: 250px;
 }
 
 .rolam-content h2,
@@ -310,7 +335,7 @@ fieldset {
 
 .rolam-content h2 {
   color: var(--header-background-color);
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -359,7 +384,7 @@ fieldset {
 
 .ref-content h2 {
   color: var(--color-green);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-top: 80px;
@@ -371,7 +396,7 @@ fieldset {
   font-weight: 700;
   color: var(--header-background-color);
   letter-spacing: 1px;
-  margin-top: 3px;
+  margin-top: 10px;
 }
 
 .ref-col {
@@ -436,7 +461,7 @@ fieldset {
 
 .tech-heading h2 {
   color: var(--color-green);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-top: 80px;
@@ -449,7 +474,7 @@ fieldset {
   color: var(--color-white);
   letter-spacing: 1px;
   text-align: center;
-  margin-top: 3px;
+  margin-top: 10px;
   max-width: 250px;
 }
 .empty-container {
@@ -490,7 +515,7 @@ fieldset {
 
 .contact-container h2 {
   color: var(--color-green);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-top: 80px;
@@ -504,7 +529,7 @@ fieldset {
   color: var(--color-white);
   letter-spacing: 2px;
   text-align: center;
-  margin-top: 3px;
+  margin-top: 10px;
   margin-bottom: 30px;
   max-width: 280px;
 }
@@ -740,7 +765,6 @@ fieldset {
   }
 
   .rolam-content h2 {
-    font-size: 2rem;
     line-height: 4rem;
   }
 
@@ -860,7 +884,7 @@ fieldset {
   }
 
   .ref-content h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .ref-content p {
@@ -883,7 +907,7 @@ fieldset {
   }
 
   .tech-heading h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .tech-heading p {
@@ -937,7 +961,7 @@ fieldset {
   }
 
   .contact-container h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .contact-container p {
@@ -1061,6 +1085,16 @@ fieldset {
   .header-sec-box-content p {
     font-size: 5.5rem;
     line-height: 7rem;
+    position: relative;
+    width: 55%;
+  }
+
+  .header-img {
+    display: block;
+    border-radius: 25%;
+    position: absolute;
+    right: 120px;
+    top: 388px;
   }
 
   .form h2 {
@@ -1174,5 +1208,9 @@ fieldset {
 @media (min-width: 1600px) {
   .item {
     width: 527px;
+  }
+
+  .header-img {
+    right: 225px;
   }
 }
