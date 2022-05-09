@@ -284,8 +284,10 @@ fieldset {
   font-size: 1.6rem;
   color: var(--color-gray);
   text-transform: uppercase;
+  /* margin: 0px auto 15px; */
   margin-bottom: 15px;
   letter-spacing: 0.3rem;
+  /* max-width: 280px; */
 }
 
 .header-sec-box-content p {
@@ -732,6 +734,7 @@ fieldset {
 
   .header-sec-box h2 {
     text-align: left;
+    /* margin: 0 0 15px 0; */
   }
 
   .header-sec-box-content {
