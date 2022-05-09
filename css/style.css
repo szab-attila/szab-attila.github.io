@@ -82,6 +82,37 @@ fieldset {
   color: var(--color-green);
 }
 
+.lang-flags {
+  position: absolute;
+  top: 80px;
+  right: 38px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-flags:hover {
+  color: whitesmoke;
+  border: 2px solid var(--color-white);
+}
+
+.flag-1 {
+  top: 33px;
+  right: 131px;
+}
+
+.flag-2 {
+  top: 33px;
+  right: 85px;
+}
+
+.lang-flags-img {
+  width: 28px;
+}
+
 /* Hamburger menü */
 
 #menu__toggle {
@@ -495,6 +526,7 @@ fieldset {
 .item p {
   letter-spacing: 1px;
   max-width: 500px;
+  padding: 14px;
 }
 
 .item_1,
@@ -853,6 +885,16 @@ fieldset {
     width: 7rem;
     height: 4.4rem;
     background-color: var(--header-background-color);
+  }
+
+  .flag-1 {
+    top: 80px;
+    right: 38px;
+  }
+
+  .flag-2 {
+    top: 125px;
+    right: 38px;
   }
 
   .header-sec-box {
