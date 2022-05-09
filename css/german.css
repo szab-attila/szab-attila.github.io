@@ -1,3 +1,7 @@
+.header-nav {
+  margin-bottom: 55px;
+}
+
 @media (min-width: 1200px) {
   .header-sec-box-content p {
     width: 65%;
