@@ -59,7 +59,16 @@ fieldset {
   background-size: cover;
   background-attachment: scroll;
 }
-
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  left: 82px;
+  z-index: 10000;
+}
 .logo {
   display: inline-block;
   position: absolute;
@@ -222,12 +231,11 @@ fieldset {
   font-size: 1.3rem;
   padding: 50px 0;
   line-height: 2.5rem;
+  max-width: 80%;
 }
 
 .menu-box__social {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
 }
 
 .menu-box__social li a {
@@ -729,7 +737,6 @@ fieldset {
 
   .header-sec-box h2 {
     text-align: left;
-    /* margin: 0 0 15px 0; */
   }
 
   .header-sec-box-content {
