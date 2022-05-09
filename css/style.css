@@ -90,8 +90,8 @@ fieldset {
 }
 
 .lang-flags:hover {
-  color: whitesmoke;
-  border: 2px solid var(--color-white);
+  transform: scale(1.3);
+  transition: 1s;
 }
 
 .flag-1 {
@@ -903,7 +903,7 @@ fieldset {
   }
 
   .header-sec-box-content p {
-    font-size: 4rem;
+    font-size: 4.4rem;
     line-height: 4.9rem;
   }
 
