@@ -59,15 +59,6 @@ fieldset {
   background-size: cover;
   background-attachment: scroll;
 }
-.dot {
-  color: red;
-  position: absolute;
-  top: 11px;
-  left: 80px;
-  z-index: 1;
-  font-size: 36px;
-  font-weight: 700;
-}
 .logo {
   display: inline-block;
   position: absolute;
@@ -81,8 +72,17 @@ fieldset {
   color: var(--color-white);
 }
 
-.logo span {
+.dot-1 {
   color: var(--color-green);
+}
+
+.dot-2 {
+  color: red;
+  position: absolute;
+  top: -19px;
+  left: 46px;
+  z-index: 1;
+  font-size: 32px;
 }
 
 .lang-flags {
