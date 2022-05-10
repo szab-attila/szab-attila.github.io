@@ -1,5 +1,12 @@
 .header-sec-box-content p {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
+  line-height: 34px;
+}
+
+.rolam-content p {
+  padding: 10px;
+  line-height: 3rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 576px) {
@@ -11,12 +18,18 @@
 @media (min-width: 768px) {
   .header-sec-box-content p {
     font-size: 3.5rem;
+    line-height: 45px;
   }
 }
 
 @media (min-width: 992px) {
   .header-sec-box-content p {
     font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+
+  .contact-container p {
+    max-width: 520px;
   }
 }
 
@@ -24,5 +37,10 @@
   .header-sec-box-content p {
     font-size: 4.3rem;
     line-height: 5.4rem;
+  }
+
+  .rolam-content p {
+    line-height: 4rem;
+    font-size: 2.5rem;
   }
 }
